@@ -14,6 +14,8 @@ def test_Task1():
     print("Task1 is correct")
 
 
+
+
 # Task2
 def generate_squares(min_num, max_num):
     return [i**2 for i in range(min_num, max_num+1)]
