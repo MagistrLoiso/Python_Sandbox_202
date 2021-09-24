@@ -11,5 +11,5 @@ def generate_squares(min_num, max_num):
         l.append(i**2)
     return l
 
-print (generate_squares(1, 5))
+print (generate_squares(1, 6))
 
