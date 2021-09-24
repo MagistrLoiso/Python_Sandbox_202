@@ -5,3 +5,4 @@ def is_even(x):
         print("You've typed negative number!")
     return bool(not x%2)
 
+print(is_even(-2))
