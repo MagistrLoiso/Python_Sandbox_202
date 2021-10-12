@@ -29,6 +29,8 @@ def test_Task2():
     assert generate_squares(-5, -3) == [25, 16, 9]
     print("Task2 is correct")
 
+
+
 # Task3
 def split_list(l):
     return [i for i in l if i != 0]
@@ -41,6 +43,8 @@ def test_Task3():
     assert split_list([0, 0, 1, 0]) == []
     assert split_list([]) == []
     print("Task3 is correct")
+
+
 
 # Task4
 def make_dict(l):
@@ -56,6 +60,8 @@ def test_Task4():
     assert make_dict(['to', 'be', 'or', 'not', 'to', 'be']) == {
         'str': ['to', 'be', 'or', 'not', 'to', 'be'], 'num': []}
     print("Task4 is correct")
+
+
 
 # Task5
 class Vector2D:
@@ -101,12 +107,13 @@ class Vector2D:
     def __rmul__(self, number):
         return Vector2D(self.x*number, self.y*number)
 
+
 def test_Task5_Task6():
     vector_0 = Vector2D()
     vector_1 = Vector2D(1, 2)
     vector_2 = Vector2D(3, -4)
     vector_3 = Vector2D(1, 2)
-    
+
     assert vector_2.norm() == 5
     assert vector_0.norm() == 0
     assert vector_1 == vector_3
@@ -118,12 +125,13 @@ def test_Task5_Task6():
     assert str(vector_1) == "(1, 2)"
     assert str(vector_2) == "(3, -4)"
     print("Task5 is correct")
-    
+
     assert vector_1 + vector_2 == Vector2D(4, -2)
     assert vector_1 - vector_2 == Vector2D(-2, 6)
     assert vector_1 * 3 == Vector2D(3, 6)
     assert 2 * vector_2 == Vector2D(6, -8)
     print("Task6 is correct")
+
 
 if __name__ == '__main__':
     test_Task1()
